@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darling</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="privacy.html">Privacy Policy</a>
+    </nav>
+</header>
+    <div class="theme-switcher">
+        <label class="switch">
+            <input type="checkbox" id="themeToggle">
+            <span class="slider round"></span>
+        </label>
+        <span id="themeLabel">Light Theme</span>
+    </div>
+
+    <div class="container">
+        <h1>💗 Darling 💗</h1>
+        <p>Merge multiple PDFs instantly in your browser.</p>
+
+        <div class="upload-area" id="uploadArea">
+            <p>Drag & Drop PDFs here or click to select files</p>
+            <input type="file" id="pdfFiles" multiple accept="application/pdf">
+        </div>
+
+        <ul class="file-list" id="fileList"></ul>
+
+        <button id="mergeBtn" class="btn">Merge PDFs</button>
+        <a id="downloadLink" class="btn download" style="display:none;">Download Merged PDF</a>
+    </div>
+
+    <!-- PDF-lib JS -->
+    <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
